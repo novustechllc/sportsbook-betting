@@ -1,0 +1,266 @@
+// color variants
+@import 'themes-vars.module.scss';
+// third-party
+@import '~react-perfect-scrollbar/dist/css/styles.css';
+@import 'sportsicon.scss';
+@import 'fontawesome.scss';
+@import 'games.scss';
+
+@font-face {
+    font-family: "SilkFont";
+    src: url("../fonts/Silkscreen-Regular.ttf") format("truetype");
+  }
+
+// ==============================|| LIGHT BOX ||============================== //
+.slick-arrow:before {
+    color: $grey500;
+}
+
+// ==============================|| LIGHT BOX ||============================== //
+.fullscreen .react-images__blanket {
+    z-index: 1200;
+}
+
+// ==============================|| APEXCHART ||============================== //
+
+.apexcharts-legend-series .apexcharts-legend-marker {
+    margin-right: 8px;
+}
+
+// ==============================|| PERFECT SCROLLBAR ||============================== //
+nav {
+    .scrollbar-container {
+        .ps__rail-y {
+            &:hover > .ps__thumb-y,
+            &:focus > .ps__thumb-y,
+            &.ps--clicking .ps__thumb-y {
+                background-color: $grey500;
+                width: 5px;
+            }
+        }
+
+        .ps__thumb-y {
+            background-color: $grey500;
+            border-radius: 6px;
+            width: 5px;
+            right: 0;
+        }
+    }
+
+    .scrollbar-container.ps,
+    .scrollbar-container > .ps {
+        &.ps--active-y > .ps__rail-y {
+            width: 5px;
+            background-color: transparent !important;
+            z-index: 999;
+
+            &:hover,
+            &.ps--clicking {
+                width: 5px;
+                background-color: transparent;
+            }
+        }
+
+        &.ps--scrolling-y > .ps__rail-y,
+        &.ps--scrolling-x > .ps__rail-x {
+            opacity: 0.4;
+            background-color: transparent;
+        }
+    }
+}
+
+.sports-items {
+    .scrollbar-container {
+        .ps__rail-x {
+            &:hover > .ps__thumb-x,
+            &:focus > .ps__thumb-x,
+            &.ps--clicking .ps__thumb-x {
+                background-color: $grey500;
+                height: 7px;
+            }
+        }
+
+        .ps__thumb-x {
+            background-color: $grey500;
+            border-radius: 6px;
+            height: 7px;
+            right: 0;
+        }
+    }
+
+    .scrollbar-container.ps,
+    .scrollbar-container > .ps {
+        &.ps--active-x > .ps__rail-x {
+            height: 7px;
+            background-color: transparent !important;
+            z-index: 999;
+
+            &:hover,
+            &.ps--clicking {
+                height: 7px;
+                background-color: transparent;
+            }
+        }
+
+        &.ps--scrolling-x > .ps__rail-x,
+        &.ps--scrolling-y > .ps__rail-y {
+            opacity: 0.4;
+            background-color: transparent;
+        }
+    }
+}
+
+// ==============================|| ANIMATION KEYFRAMES ||============================== //
+
+@keyframes wings {
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%,
+    20%,
+    53%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+
+    40%,
+    43% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -5px, 0);
+    }
+
+    70% {
+        animation-timing-function: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+        transform: translate3d(0, -7px, 0);
+    }
+
+    80% {
+        transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+        transform: translateZ(0);
+    }
+
+    90% {
+        transform: translate3d(0, -2px, 0);
+    }
+}
+
+@keyframes slideY {
+    0%,
+    50%,
+    100% {
+        transform: translateY(0px);
+    }
+
+    25% {
+        transform: translateY(-10px);
+    }
+
+    75% {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes slideX {
+    0%,
+    50%,
+    100% {
+        transform: translateX(0px);
+    }
+
+    25% {
+        transform: translateX(-10px);
+    }
+
+    75% {
+        transform: translateX(10px);
+    }
+}
+
+.arrow-up {
+    animation: bounceUp 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.arrow-down {
+    animation: bounceDown 1600ms infinite cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+@keyframes bounceUp {
+    50% {
+        border: #7cd044 1px solid;
+    }
+}
+
+@keyframes bounceDown {
+    50% {
+        border: #d8354b 1px solid;
+    }
+}
+
+.text-ellipse {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.h6 {
+    margin: 0;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #bdc8f0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.75;
+}
+
+.referal-txt {
+    color: #c4b3ef;
+    animation-name: bgAnimation;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bgAnimation {
+    0% {
+        color: #c4b3ef;
+    }
+    25% {
+        color: #0eff6f;
+    }
+    50% {
+        color: #c4b3ef;
+    }
+    75% {
+        color: #0eff6f;
+    }
+    100% {
+        color: #c4b3ef;
+    }
+}
+
+::-webkit-scrollbar-thumb {
+    background: #1f283b;
+    border-radius: 7px;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+    height: 7px;
+}

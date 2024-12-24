@@ -1,0 +1,59 @@
+@font-face {
+    font-family: 'Font Awesome 5 Pro';
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(../fonts/fa-solid-900.woff2) format('woff2');
+}
+
+.fas {
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 900;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.fa-spade:before {
+    content: '\f2f4';
+}
+
+.fa-heart:before {
+    content: '\f004';
+}
+
+.fa-club:before {
+    content: '\f327';
+}
+
+.fa-diamond:before {
+    content: '\f219';
+}
+
+.fa-gem:before {
+    content: '\f3a5';
+}
+
+.fa-square:before {
+    content: '\f0c8';
+}
+
+.fa-coin:before {
+    content: '\f85c';
+}
+
+.fa-bullseye:before {
+    content: '\f140';
+}
+
+.fa-dice-d20:before {
+    content: '\f6cf';
+}
+
+.fa-rocket:before {
+    content: '\f135';
+}
