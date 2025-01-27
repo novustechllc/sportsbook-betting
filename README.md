@@ -4,10 +4,11 @@
 
 BoiBook is the first affiliate sportsbook partnership project, offering a unique and lucrative opportunity for participants to earn through referral bonuses and community initiatives. With advanced features and APIs integrated into the frontend, BoiBook is a top-ranked sportsbook project delivering a seamless and rewarding betting experience.
 
-## 📞 Contact
-For inquiries, collaborations, or support, feel free to reach out:
-- 📱 Telegram: https://t.me/magiceden7
-- 🎮 Discord: `bitmaintech`
+## 👋 Contact Me
+
+https://t.me/earthzeta
+### Telegram: [EarthZeta](https://t.me/earthzeta)  
+### Discord: [EarthZeta](https://discord.com/users/339619501081362432)
 
 ---
 
