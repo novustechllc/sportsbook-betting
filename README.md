@@ -2,9 +2,9 @@
 
 ## 👋 Contact Here
 
-https://t.me/earthzeta
-### Telegram: [EarthZeta](https://t.me/earthzeta)  
-### Discord: [EarthZeta](https://discord.com/users/339619501081362432)
+### Telegram: https://t.me/novustechllc
+### Whatsapp: https://wa.me/14105015750
+
 
 Feel free to contact here if you have something to need any help.
 
